@@ -1,0 +1,298 @@
+/*parei no 5º vídeo */
+
+
+body {
+    
+ font-family: Lato, sans-serif;
+    
+    /*para renderizar melhor o texto*/
+    -webkit-font-smoothing: antialiased;
+    }
+
+
+.container {
+    
+    /*Define a largura o max coopera para tornar responsivo*/
+    max-width: 960px;
+    
+    /*centraliza a section*/
+    margin: 0 auto;
+    
+    /*posiciona os elementos um ao lado do outro*/
+    display: flex;
+    
+        /*coloca o logotipo no canto esquerdo e o menu no direito*/
+    /*coloca o logotipo no canto esquerdo e o menu no direito*/
+    justify-content: space-between;        
+}
+
+
+/*Uso a class botão para configurar o botão*/
+.botao {
+    background-color: #ff397e;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    
+    /*Retira o sublinhado do link*/
+    text-decoration: none;
+    
+    /*Coloca uma leve sombra*/
+    box-shadow: 0px 6px 0px #a32751;
+    font-size: 36px;
+    
+    /*arredonda a borda*/
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+
+/*essa técnica é como se tivesse subito o topo para dentro do header*/
+header {
+    margin-bottom: -90px;
+}
+
+/*formatar o logotipo*/
+header h1 {
+    
+    /*zerar as margens do logotipo*/
+    margin: 0;
+    
+    /*trocar o texto pela imagem do logotipo*/
+    background-image: url(logo.png);
+    
+    /*não repetir o logotipo*/
+    background-repeat: no-repeat;
+    
+     /*Ajustando largura e altura do logotipo*/
+    width: 177px;
+    height: 76px;
+    
+    /*ajusta a margem*/
+    margin-top: 10px;
+    }
+
+/*esconder o texto do logotipo*/
+header h1 span {
+    visibility: hidden;
+}
+
+/*Para deixar o menu mais centralizado*/
+header nav ul {
+   padding-right: 80px;
+    
+   /*zero as margens*/
+    margin: 0;
+    
+    /*ajusta a margem*/
+    margin-top: 20px;
+}
+
+
+/*é importante quando se tem um site grande, observar sempre a hierarquia conforme abaixo.*/
+header nav li {
+    
+    /*retira os boletes poites dos itens da lista*/
+    list-style: none;
+    
+    /*colocas os itens do menu um ao lado do outro*/
+    display: inline-block;
+    
+     /*ajustando a margem direita*/
+    margin-right: 80px;
+}
+
+header nav li:last-child {
+    border: 1px solid #fff;
+    
+    /*borda arredondada*/
+    border-radius: 3px;
+    padding: 10px 30px 10px 30px; 
+}
+
+/*Formatação do menu*/
+header nav li a {
+  color: #fff;
+    
+    /*retira o sublinhado do link*/
+text-decoration: none;
+    
+    /*tamanho da font*/
+    font-size: 20px;
+}
+
+/*Imagem de fundo*/
+section#topo {
+    background-image: url(fundo.png);
+    
+    /*Ajusta a imagem para aparecer todos os detalhes*/
+    background-size: cover;
+    
+    /*ajusta a altura da imagem de fundo*/
+    height: 700px;
+}
+
+/*Ajusta todos os componentes da div chamada*/
+section#topo .chamada {
+   
+   color: #fff;
+    margin-top: 200px;
+    text-align: center;
+}
+
+/*Ajusta o texto do h2*/
+section#topo .chamada h2 {
+    margin: 0;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/*Ajusta o texto do paragráfo*/
+section#topo .chamada p {
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+section#conheca {
+    padding: 70px;   
+}
+
+section#conheca .texto {
+    padding: 70px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+section#conheca .texto h2 {
+    font-size: 36px;  
+}
+
+section#conheca .texto p {
+    font-size: 24px;  
+}
+
+section#conheca .texto a {
+    width: 60%;
+    font-size: 30px;
+}
+
+
+section#depoimento {
+    background-color: #ebe7fb;
+    border-top: 4px solid #511099;
+}
+
+section#depoimento .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    padding-bottom: 50px;
+}
+
+section#depoimento img {
+    width: 150px;
+    height: 150px;
+}
+
+section#depoimento p {
+    font-size: 24px;
+    width: 80%;
+    text-align: center;
+}
+
+section#convite {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url(fundo-convite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+section#convite form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    width: 55%;
+    border-radius: 3px;
+    display:flex;
+}
+
+section#convite .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+section#convite input {
+    padding: 30px;
+    width: 75%;
+    background-color: transparent;
+    border: none;
+}
+
+section#convite button {
+    background-image: url(envelope.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    width: 105px;
+    height: 43px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #2a0157;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 4px;
+}
+
+footer .container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+section#convite button span {
+    visibility: hidden;
+    
+}
+
+/*Esconder o menu quando estiver acessando do celular*/
+@media (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+    
+    header h1 {
+        margin-left: 20px;
+    }
+    
+    section#topo {
+        padding: 20px;
+    }
+    
+    section#conheca .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section#conheca .container .texto {
+        padding: 10px;
+    }
+    
+    section#conheca .container .texto a {
+        width: 100%;
+    }
+    
+    section#convite form {
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+}

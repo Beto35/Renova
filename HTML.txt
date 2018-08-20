@@ -1,0 +1,133 @@
+<!--Define que o tipo do documento é html-->
+<!DOCTYPE html>
+
+<!--Define que idioma da page é português do brasil-->
+<html lang="pt-br">
+
+<head>
+   
+   <!--Ajusta caracteres especiais-->
+    <meta charset="UTF-8">
+    
+    <title>Projeto 007</title>
+    
+    <!--Utilizado para zerar todas as margens-->
+    <link rel="stylesheet" href="normalize.css">
+    
+    <!--Link do google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+    
+    <!--conecta o arquivo css-->
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!--ajusta a pagina para versão mobile, deixando o site responsivo.-->
+    <meta name="viewport" content="width:device-width, initial-scale=1">
+    
+    <!--esse código do style é apenas para conferir o visual de como vai ficar o site, o mesmos deve ser apagado depois
+    <style>
+        
+        /*o código abaixo vai formatar o a section, header e a footer*/
+        section, header, footer {
+            background-color: #666;
+            height: 300px;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            
+            background-color: #eee;
+            height: 300px;
+        }
+    </style>
+    
+    -->
+    
+</head>
+<body>
+  
+  <!--Cabeçalho do site-->
+   <header>
+       <div class="container">
+          
+          <!--logotipo-->
+           <h1>
+               <span>Titum</span>
+           </h1>
+           
+           <!--criar o menu-->
+           <nav>
+              
+              <!-- o menu abaixo foi feito assim: ul>li*3>a +tab, ou seja, uma lista(ul), com 3 itens(li*3>), e cada item terá um link(a)-->
+               <ul>
+                  <!--ele sofrerá uma rolagem quando clicar em um dos links-->
+                   <li><a href="#conheca">Conheça</a></li>
+                   <li><a href="#depoimento">Depoimentos</a></li>
+                   <li><a href="#convite">Convite</a></li>
+               </ul>
+           </nav>
+           
+           
+       </div>
+   </header>
+   
+   <!--usada para dividir o site em seções/ digitei section>.container + tab para o emmet gerar o código/ depois copiei e colei as outras quatro.-->
+   <section id="topo">
+       <div class="container">
+          
+          <!--Criar uma div chamada-->
+           <div class="chamada">
+               <h2>Conheça Titum</h2>
+               <p>A nova moda do momento.</p>
+               <a href="#conheca" class="botao">Saiba mais</a>
+           </div>
+       </div>
+   </section>
+   
+   
+   <section id="conheca">
+       <div class="container">
+        
+         <img src="Conhe%C3%A7a.png" alt="Imagem de uma garota ouvindo música">
+         
+         <div class="texto">
+             
+             
+               <h2>Afinal, o que é o Titum?</h2>
+               <p>Titum é um novo movimento, que veio para ficar. Lançado no último evento musical de maior prestígio mundial, Titum começou a fazer parte da cultura pop. </p>
+               <a href="#convite" class="botao">Quero Titum</a>
+             
+         </div> 
+          
+       </div>
+   </section>
+   
+   
+   <section id="depoimento">
+       <div class="container">
+           <img src="Depoimentos.png" alt="Garota morena ouvindo música">
+           <p>"Titum foi sem dúvida a melhor coisa que aconteceu na minha vida. Eu não sei como consegui viver sem o Titum até hoje." <BR><strong>Claudia Santos</strong></p>
+       </div>
+   </section>
+   
+   
+   <section id="convite">
+       <div class="container">
+           
+            <form action="">
+                <input type="email" placeholder="Receba um convite no email informado aqui.">
+                <button><span>Enviar</span></button>
+                
+            </form>  
+           
+       </div>
+   </section>
+   
+   <!--Rodapé do site-->
+   <footer>
+       <div class="container">
+           <p>© 2016 Titum - Todos os direitos reservados.</p>
+       </div>
+   </footer>
+    
+</body>
+</html>
